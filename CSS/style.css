@@ -1,0 +1,454 @@
+
+/************************************/
+/* HEADER */
+/***********************************/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0ecfe;
+
+/* Beacause we want our header to be sticky later */
+
+height: 9.6rem;
+padding: 0 4.8rem;
+}
+
+
+.logo{
+    height: 6.4rem;
+    width: 6.4rem;
+    border-radius: 50%;
+    border: 3px solid #b59efa;
+}
+
+/************************************/
+/* NAVIGATION */
+/***********************************/
+
+.main-nav-list{
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited{
+display: inline-block;
+text-decoration: none;
+padding: 1.8rem 1.8rem;
+color: #191919;
+font-weight: 500;
+font-size: 1.8rem;
+transition: all 0.3s;
+}
+
+.main-nav-link:active,
+.main-nav-link:hover{
+    color: #7f6faf;
+}
+
+
+/************************************/
+/* HOME SECTION */
+/***********************************/
+
+.section-Home{
+    background-color:#f0ecfe ;
+    padding: 4.8rem 0 9.6rem 0;
+    margin-bottom: 3.2rem;
+}
+
+.home{
+    max-width: 130rem;
+    margin: 0 auto;
+    padding:0 9.6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9.6rem;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+
+.home-description{
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+
+}
+
+.home-img{
+    width: 100%;
+    
+}
+
+
+
+
+.download-arrow{
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+
+/* .skills{
+    margin-top: 3.2rem;
+    margin-bottom: 1.8rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.skills-logo{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 22.8rem;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.8rem;
+}
+
+
+.skills-logo img{
+    height: 6.4rem;
+    width: 6.4rem;
+    
+} */
+
+/**************************************************/
+/* About Section */
+/**************************************************/
+
+.about-me{
+    margin: 0 auto;
+    padding: 4.8rem 9.6rem;
+    background-color:#fff;
+    margin-bottom: 9.6rem;
+}
+
+
+.about{
+    gap: 4.8rem;
+    margin-bottom: 6.4rem;
+}
+
+.Experience,
+.projects{
+    padding: 4.8rem;
+    background-color: #e9e2fe;
+    border-radius: 12px;
+margin-bottom: 6.4rem;
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.095);
+}
+
+
+
+.work-experience li{
+    font-size: 1.8rem;
+    color: #555;
+    list-style: none;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+.work-experience li:last-child{
+    margin-bottom: 3.2rem;
+}
+
+.project-description{
+    font-size: 1.8rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+.highlight{
+    color: #333;
+    font-weight: 600;
+}
+
+.project-link{
+    text-decoration: none;
+    color: #7f6faf;
+}
+
+.expertise{
+    padding: 0 0;
+    
+}
+
+
+.expertise-list{
+   background-color: #b59efa;
+   padding: 4.8rem 4.8rem;
+   border-radius: 9px;
+   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.095)
+}
+
+.expertise-list li{
+font-size: 1.8rem;
+color: #333;
+line-height: 1.8;
+list-style-type: disc;
+}
+
+.expertise-list li:first-child{
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    list-style: none;
+
+}
+
+
+/**************************************************/
+/* Contact section */
+/**************************************************/
+
+.contact {
+    padding: 3.2rem 6.4rem;
+    background-color: #f8f5ff;
+    margin-bottom: 9.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .contact-us {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .my-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.2rem;
+    overflow: hidden;
+    padding: 1.4rem;
+  }
+  
+  .my-photo img {
+    height: 14rem;
+    width: 14rem;
+    border-radius: 50%;
+    border: 3px solid #b59efa;
+    transition: transform 0.3s ease;
+  }
+
+  .my-photo img:hover{
+    transform: scale(1.1);
+  }
+  
+  .contact-heading {
+    padding: 0 3.2rem;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-link {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #333;
+    line-height: 2.4;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    font-size: 2.4rem;
+  }
+
+  .contact-link:hover .contact-icon {
+    filter: brightness(0.7) !important;
+  }
+  
+  
+  
+  
+  
+  
+  .contact-text {
+    margin-left: 1.2rem;
+  }
+  
+  .follow-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.2rem;
+  }
+  
+  .social-links {
+    list-style: none;
+    display: flex;
+    gap: 4.8rem;
+  }
+  
+  .social-icon {
+    height: 4rem;
+    width: 4rem;
+    font-size: 4rem;
+    color: #767676;
+    transition: all 0.5s;
+  }
+  
+  .social-icon:hover {
+    fill: #b59efa;
+  }
+
+  .center{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  /**********************************************/
+  /* cta section */
+  /**********************************************/
+  
+
+  .signup-login{
+    margin-bottom: 9.6rem;
+  }
+
+.cta-container{
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    justify-content: center;
+    align-items: center;
+   column-gap: 9.6rem;
+   row-gap: 4.8rem;
+   margin-bottom: 9.6rem;
+}
+
+
+.cta-signup,
+.cta-login{
+background-color: #b59efa;
+padding: 4.8rem;
+border-radius: 9px;
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1)
+}
+
+
+
+.cta-form input, 
+.cta-form select {
+
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    color:#191919;
+    font-family: inherit;
+    border:none;
+    border-radius: 9px;
+    background-color: #f8f5ff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin-top: 1.2rem;
+    margin-bottom: 1.8rem;
+
+
+
+}
+
+
+.cta-form label{
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 1.8rem;
+
+
+}
+
+
+.sign-up{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4.8rem;
+    row-gap: 2.4rem;
+}
+
+.login{
+    display: grid;
+    row-gap: 2.4rem;
+}
+
+.cta-btn{
+    display: inline-block;
+    justify-self: center;
+    background-color: #242032;
+    padding: 1.6rem 3.2rem;
+    border: none;
+    border-radius: 9px;
+    font-family: inherit;
+    font-weight:600;
+
+    
+    font-size: 1.8rem;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+
+
+.cta-btn:hover{
+    background-color: #fff;
+    color: #151515;
+    cursor: pointer;
+    
+}
+
+.sign-up-btn{
+    grid-area: 3/1 /4/3;
+}
+
+
+/*********************************************************/
+/* FOOTER */
+/*********************************************************/
+
+
+.footer{
+    padding: 1.8rem 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#f8f5ff ;
+}
+
+.footer--grid{
+    display: grid;
+    grid-template-columns: 0.3fr 2fr 1fr;
+    align-items: center;
+    gap: 1.8rem;
+    
+}
+
+.copyright-para{
+font-size: 1.6rem;
+color: #333;
+padding: 1.8rem;
+}

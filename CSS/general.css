@@ -1,0 +1,184 @@
+/* COLORS */
+
+/* 
+Main colors:-
+darkest --> lightest
+
+#b59efa
+
+#a38ee1
+
+
+ */
+
+/* 
+
+TEXT COLORS:
+
+#555
+
+*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ html{
+    font-size: 62.5%;
+
+    scroll-behavior: smooth;
+}
+
+body{
+   font-family: "Rubik",sans-serif,Arial;
+   line-height: 1;
+   font-weight:400;
+   color: #555;
+}
+
+
+
+/****************************************************/
+/* GENERAL GRID SYSTEM */
+/****************************************************/
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.grid{
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+    justify-content: center;
+    /* align-items: center; */
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.grid--2-cols{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.grid--3-cols{
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.grid--4-cols{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.grid--center-vertically{
+    align-items: center;
+}
+
+
+/* Buttons */
+
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 0.9rem;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.5s;
+    font-weight:600;
+    
+}
+
+.btn--full:link,
+.btn--full:visited{
+    background-color: #b59efa;
+    color: #191919;
+
+}
+
+
+.btn--full:hover,
+.btn--full:active{
+    background-color: #a38ee1;
+    color: #151515;
+    
+}
+
+
+.btn--outline:link,
+.btn--outline:visited{
+    background-color: #fff;
+    color: #333;
+
+}
+
+.btn--outline:hover,
+.btn--outline:active{
+    background-color: #f8f5ff;
+
+    /* trick to add border inside */
+    box-shadow:inset 0 0 0 5px #fff ;
+    
+}
+
+.margin-right{
+    margin-right: 2.4rem !important;
+
+}
+
+.main-nav-link.cta:link,
+.main-nav-link.cta:visited{
+    background-color:#b59efa ;
+    color: #191919;
+    padding: 1.6rem 2.4rem;
+    border-radius: 9px;
+}
+.main-nav-link.cta:hover,
+.main-nav-link.cta:active{
+    background-color:#a38ee1 ;
+    color: #151515;
+}
+
+
+
+/* Headings */
+
+.heading-primary{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #333;
+    margin-bottom: 4rem;
+    letter-spacing: -0.6px;
+    
+}
+
+.heading-secondary{
+    font-size: 4.8rem;
+    color:#333 ;
+    margin-bottom: 4.8rem;
+}
+
+.heading-tertairy{
+    font-size: 3.2rem;
+    color: #333;
+    margin-bottom: 3.2rem;
+}
+
+
+.heading-general{
+    font-size: 2rem;
+    color: #333;
+    margin-bottom:1.8rem ;
+}
+
