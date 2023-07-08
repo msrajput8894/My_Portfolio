@@ -1,0 +1,195 @@
+
+
+/********************************************/
+/* FOR WIDTH BELOW 1260PX */
+/********************************************/
+
+
+@media(max-width: 1260px){
+
+
+  .section-Home{
+
+    padding: 7.2rem;
+  }
+
+  .about-me{
+    padding: 7.2rem;
+  }
+  .heading-primary{
+    font-size: 4.4rem;
+    
+  }
+  .heading-secondary{
+    font-size:4rem ;
+  }
+
+  .home-description{
+    /* font-size: 1.8rem; */
+    line-height: 1.2;
+
+  }
+  .home{
+    gap: 7.2rem;
+  }
+
+
+  .expertise-list{
+    padding: 3.2rem 3.2rem;
+    
+  }
+
+  .cta-container{
+    column-gap: 4.8rem;
+  }
+
+}
+
+
+/********************************************/
+/* FOR WIDTH BELOW 1090PX */
+/********************************************/
+
+
+@media(max-width: 1090px){
+
+  .section-Home{
+    padding: 3.2;
+  }
+
+  .home{
+    gap: 6.4rem;
+  }
+  .about-me{
+    padding: 3.2rem;
+  }
+
+  .expertise{
+    column-gap: 3.2rem;
+  }
+
+
+  .expertise-list{
+    padding: 2.4rem;
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+  }
+
+  .cta-container{
+    column-gap: 3.2rem;
+
+  }
+
+  .sign-up{
+    column-gap: 3.2rem;
+  }
+
+  .container{
+    padding: 2.2rem;
+  }
+
+  .heading-primary{
+    font-size: 4rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .home-description{
+    font-size: 1.8rem;
+    margin-bottom: 3.2;
+  }
+} 
+
+/********************************************/
+/* FOR WIDTH BELOW 1001PX */
+/********************************************/
+
+
+@media(max-width:1009px){
+  .home{
+    grid-template-columns: 1fr;
+  }
+
+  .home-img{
+    width:80%
+  }
+
+  .home-text-box{
+text-align: center;
+  }
+
+  .home-img-box{
+    text-align: center;
+  }
+
+  .container{
+    padding: 6.4rem;
+  }
+  .cta-container{
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container{
+    padding: 1.8rem;
+  }
+  .footer{
+    padding: 0;
+  }
+}
+
+
+/********************************************/
+/* FOR WIDTH BELOW 835PX */
+/********************************************/
+
+
+@media(max-width: 835px){
+
+.heading-primary{
+  font-size: 4rem;
+}
+
+.heading-secondary{
+  font-size: 3.2rem;
+}
+
+.heading-tertairy{
+  font-size: 2.4rem;
+}
+
+
+.heading-general{
+  font-size: 1.8rem;
+}
+
+.Experience,
+.projects{
+  padding: 3.2rem;
+}
+
+.work-experince li{
+  line-height: 1.4;
+}
+
+.work-experience li:last-child{
+  margin-bottom: 2.4rem;
+}
+
+.project-description{
+  line-height: 1.4;
+}
+
+.expertise-list{
+  padding: 1.8rem;
+}
+
+
+.expertise-list li{
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.expertise-list li:first-child{
+  font-size: 2rem;
+}
+
+}

@@ -56,18 +56,17 @@ transition: all 0.3s;
 
 .section-Home{
     background-color:#f0ecfe ;
-    padding: 4.8rem 0 9.6rem 0;
+    padding: 4.8rem 9.6rem;
     margin-bottom: 3.2rem;
 }
 
 .home{
     max-width: 130rem;
     margin: 0 auto;
-    padding:0 9.6rem;
+    /* padding:0 9.6rem; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 9.6rem;
-    /* justify-content: center; */
+    gap: 8.4rem;
     align-items: center;
 }
 
@@ -75,7 +74,7 @@ transition: all 0.3s;
 
 .home-description{
     font-size: 2rem;
-    line-height: 1.6;
+    line-height: 1.4;
     margin-bottom: 4.8rem;
 
 }
