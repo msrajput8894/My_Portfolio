@@ -352,6 +352,22 @@ border-radius: 9px;
 box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1)
 }
 
+.form-logo{
+  margin-bottom: 2.4rem;
+  height: 8.4rem;
+  width: 8.4rem;
+  border: #362f4b solid 3px;
+}
+
+.form-heading{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+
 
 
 .cta-form input, 
