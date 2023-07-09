@@ -1,64 +1,89 @@
 
 
+/* rem and em does not depend on HTML font size in case of media queries instead here 1rem = 1em = 16px i.e. default browser font size */
+
+/* Do not use px unit in media queries */
+
+/* for width of 1280px we should devide 1280 by 16 i.e. 1280/16 == 80em */
+
+/* Always use em unit in media queris */
+
+
 /********************************************/
-/* FOR WIDTH BELOW 1260PX */
+/* FOR WIDTH BELOW 1344PX for small laptops */
 /********************************************/
+@media(max-width: 84em){
 
-
-@media(max-width: 1260px){
-
-
-  .section-Home{
-
-    padding: 7.2rem;
+  .home{
+    max-width: 120rem;
   }
 
-  .about-me{
-    padding: 7.2rem;
-  }
   .heading-primary{
     font-size: 4.4rem;
-    
   }
   .heading-secondary{
-    font-size:4rem ;
+    font-size: 4rem;
+  }
+}
+
+
+
+
+
+
+
+
+/********************************************/
+/* FOR WIDTH BELOW 1200PX */
+/********************************************/
+
+
+@media(max-width: 75em){
+
+/* we will decrease overall font size by 1px i.e. making it 9px from 10px */
+  /* 9/16 == 56.25% */
+  html{
+    font-size: 56.25%;
   }
 
-  .home-description{
-    /* font-size: 1.8rem; */
-    line-height: 1.2;
-
-  }
-  .home{
-    gap: 7.2rem;
+  .heading-secondary{
+    font-size:3.6rem ;
   }
 
-
-  .expertise-list{
-    padding: 3.2rem 3.2rem;
-    
+  .heading-tertairy{
+    font-size: 2.4rem;
   }
 
-  .cta-container{
+  .grid{
+
     column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .home{
+    gap: 4.8rem;
+  }
+
+  .main-nav-list{
+    gap: 3.2rem;
   }
 
 }
 
 
 /********************************************/
-/* FOR WIDTH BELOW 1090PX */
+/* FOR WIDTH BELOW 1040PX (Landscape tablets) */
 /********************************************/
 
 
-@media(max-width: 1090px){
+@media(max-width: 65em){
 
   .section-Home{
-    padding: 3.2;
+    padding: 6.4rem;
   }
 
   .home{
-    gap: 6.4rem;
+    gap: 4.8rem;
   }
   .about-me{
     padding: 3.2rem;
@@ -69,11 +94,7 @@
   }
 
 
-  .expertise-list{
-    padding: 2.4rem;
-    font-size: 1.6rem;
-    line-height: 1.4rem;
-  }
+  
 
   .cta-container{
     column-gap: 3.2rem;
@@ -100,13 +121,20 @@
 } 
 
 /********************************************/
-/* FOR WIDTH BELOW 1001PX */
+/* FOR WIDTH BELOW 912PX (tablets)*/
 /********************************************/
 
 
-@media(max-width:1009px){
-  .home{
+@media(max-width:57em){
+
+  html{
+    font-size: 50%;
+  }
+
+   .home{
     grid-template-columns: 1fr;
+    padding:0 6.4rem;
+    gap:6.4rem ;
   }
 
   .home-img{
@@ -115,17 +143,26 @@
 
   .home-text-box{
 text-align: center;
+
   }
 
   .home-img-box{
     text-align: center;
   }
 
-  .container{
-    padding: 6.4rem;
-  }
   .cta-container{
     grid-template-columns: 1fr;
+    width: 60rem;
+  }
+
+  .container{
+    padding: 6.4rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .expertise-list{
+    padding: 2.4rem;
   }
 
   .footer-container{
@@ -134,15 +171,19 @@ text-align: center;
   .footer{
     padding: 0;
   }
-}
+  .main-nav-list{
+    gap: 1.8rem;
+  }
+
+} 
 
 
 /********************************************/
 /* FOR WIDTH BELOW 835PX */
 /********************************************/
 
-
-@media(max-width: 835px){
+/* 
+@media(max-width: 53em){
 
 .heading-primary{
   font-size: 4rem;
@@ -192,4 +233,4 @@ text-align: center;
   font-size: 2rem;
 }
 
-}
+} */
