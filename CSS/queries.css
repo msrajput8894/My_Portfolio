@@ -175,62 +175,197 @@ text-align: center;
     gap: 1.8rem;
   }
 
+  /* MOBILE NAVIGATION */
+
+  .btn-mobile-nav{
+    display: block;
+  }
+
+
+
+  .main-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.93);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate-X(100%);
+    transition: all 0.5s ease-in;
+
+
+    /* to Hide mobile navigation by default */
+
+    /* setting display to none Allows no transition at all */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) making it in-accessible */
+    pointer-events: none;
+
+    /* 3) hiding from screan readers */
+    visibility: hidden;
+  }
+
+  .main-nav-list{
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+.main-nav-link:visited{
+  font-size: 3.2rem;
+}
+
+.nav-open .main-nav{
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.nav-open .icon-mobile-nav[name="close-outline"]{
+  display: block;
+}
+
+.nav-open .icon-mobile-nav[name="menu-outline"]{
+  display: none;
+}
+
 } 
 
 
 /********************************************/
-/* FOR WIDTH BELOW 835PX */
+/* FOR WIDTH BELOW 704PX (for smaller tablets) */
 /********************************************/
 
-/* 
-@media(max-width: 53em){
 
-.heading-primary{
-  font-size: 4rem;
+@media(max-width: 44em){
+
+  .grid{
+    column-gap: 3.2rem;
+    row-gap: 4.8rem;
+  }
+
+  .Experience ,
+  .projects{
+    padding: 2.4rem;
+  }
+
+
+  .grid--3-cols{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .js{
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .expertise{
+    gap: 6.4rem;
+    padding: 4.8rem;
+  
+  }
+
+  .expertise-list{
+    width: 28rem;
+   
+  }
+  
+
 }
 
-.heading-secondary{
-  font-size: 3.2rem;
+/********************************************/
+/* FOR WIDTH BELOW 600PX (for smaller tablets) */
+/********************************************/
+
+@media(max-width: 38em){
+
+
+
+  .grid--3-cols,
+  .grid--2-cols{
+    grid-template-columns: 1fr;
+  }
+
+  .grid{
+    gap: 4.8rem;
+  }
+
+  .home{
+    padding: 0 3.2rem;
+  }
+  .section-Home{
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .expertise-list{
+    justify-self: center;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited{
+    padding: 2.4rem 1.6rem;
+  }
+
+  .sign-up{
+    /* grid-template-columns: 1fr; */
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .Experience ,
+  .projects{
+    padding: 3.2rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .social-links{
+    gap: 1.8rem;
+    
+  }
+
+  .footer--grid{
+    gap: 0.2rem;
+  }
+
+  .contact{
+    margin-bottom: 4.8rem;
+  }
+
+  .about-me{
+    margin-bottom: 1.8rem;
+  }
+
+  .heading-secondary{
+    margin-bottom: 2.4rem;
+  }
+
+
+  .heading-tertairy{
+    margin-bottom: 0;
+  }
+
+  .signup-login{
+    margin-bottom: 1.8rem;
+  }
+
+  .container{
+    padding: 0 4.8rem;
+  }
+
+  .footer-container{
+    padding: 1.8rem;
+  }
+
+  /* .footer--grid{
+  
+    grid-template-columns: 1fr 2fr;
+  } */
+
 }
-
-.heading-tertairy{
-  font-size: 2.4rem;
-}
-
-
-.heading-general{
-  font-size: 1.8rem;
-}
-
-.Experience,
-.projects{
-  padding: 3.2rem;
-}
-
-.work-experince li{
-  line-height: 1.4;
-}
-
-.work-experience li:last-child{
-  margin-bottom: 2.4rem;
-}
-
-.project-description{
-  line-height: 1.4;
-}
-
-.expertise-list{
-  padding: 1.8rem;
-}
-
-
-.expertise-list li{
-  font-size: 1.6rem;
-  line-height: 1.4;
-}
-
-.expertise-list li:first-child{
-  font-size: 2rem;
-}
-
-} */
