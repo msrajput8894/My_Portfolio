@@ -79,15 +79,14 @@ transition: all 0.3s;
 
 .section-Home{
     background-color:#f0ecfe ;
-    padding: 4.8rem 9.6rem;
-    margin-bottom: 3.2rem;
+    padding: 4.8rem 0 9.6rem 0;
+    margin-bottom: 9.6rem;
 }
 
 .home{
     max-width: 130rem;
-    margin: 0 auto;
-    grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    
 }
 
 
@@ -141,8 +140,6 @@ transition: all 0.3s;
 /**************************************************/
 
 .about-me{
-    margin: 0 auto;
-    padding: 4.8rem 9.6rem;
     background-color:#fff;
     margin-bottom: 9.6rem;
 }
@@ -231,7 +228,7 @@ list-style: none;
 
 .contact {
     padding: 3.2rem 6.4rem;
-    background-color: #f8f5ff;
+    background-color: #f0ecfe;
     margin-bottom: 9.6rem;
     display: flex;
     flex-direction: column;
@@ -343,6 +340,7 @@ list-style: none;
     grid-template-columns: auto auto;
     justify-content: center;
     align-items: center;
+    /* margin-bottom: 3.4rem; */
 
   }
   
@@ -469,16 +467,18 @@ box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1)
 /*********************************************************/
 
 
-
+.footer{
+padding: 3.2rem 4.8rem;
+background-color:#f0ecfe ;
+}
 
 .footer--grid{
     display: grid;
     grid-template-columns: 0.3fr 2fr 1fr;
     align-items: center;
     justify-content: center;
-    padding: 1.8rem 1.8rem;
-    background-color:#f8f5ff ;
-    gap: 1.8rem;
+    
+    gap: 4.8rem;
     
 }
 
@@ -486,4 +486,13 @@ box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1)
 font-size: 1.6rem;
 color: #333;
 padding: 1.8rem;
+}
+
+.social-links{
+  justify-content: end;
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;
 }

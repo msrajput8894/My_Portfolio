@@ -47,9 +47,9 @@ body{
 /****************************************************/
 
 .container{
-    max-width: 120rem;
+    max-width: 130rem;
     margin: 0 auto;
-    padding: 0 3.2rem;
+    padding: 0 6.4rem;
 }
 
 .grid{

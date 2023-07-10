@@ -155,11 +155,7 @@ text-align: center;
     width: 60rem;
   }
 
-  .container{
-    padding: 6.4rem;
-    display: flex;
-    justify-content: center;
-  }
+
   
   .expertise-list{
     padding: 2.4rem;
@@ -274,12 +270,22 @@ text-align: center;
     width: 28rem;
    
   }
+
+  .cta-container{
+    grid-template-columns: 1fr;
+    width: 45rem;
+  }
+
+  .about-me{
+    padding: 0;
+  }
+
   
 
 }
 
 /********************************************/
-/* FOR WIDTH BELOW 600PX (for smaller tablets) */
+/* FOR WIDTH BELOW 600PX (for Mobile phones) */
 /********************************************/
 
 @media(max-width: 38em){
@@ -297,6 +303,7 @@ text-align: center;
 
   .home{
     padding: 0 3.2rem;
+    gap: 9.6rem;
   }
   .section-Home{
     padding: 2.4rem 0 6.4rem 0;
@@ -335,7 +342,7 @@ text-align: center;
   }
 
   .contact{
-    margin-bottom: 4.8rem;
+    margin-bottom: 8.4rem;
   }
 
   .about-me{
@@ -343,12 +350,12 @@ text-align: center;
   }
 
   .heading-secondary{
-    margin-bottom: 2.4rem;
+    margin-bottom: 3.2rem;
   }
 
 
   .heading-tertairy{
-    margin-bottom: 0;
+    margin-bottom: 2.4rem;
   }
 
   .signup-login{
@@ -363,9 +370,18 @@ text-align: center;
     padding: 1.8rem;
   }
 
+
+  .cta-container{
+    grid-template-columns: 1fr;
+    width: 38rem;
+  }
+
+
   /* .footer--grid{
   
     grid-template-columns: 1fr 2fr;
   } */
+
+  
 
 }
