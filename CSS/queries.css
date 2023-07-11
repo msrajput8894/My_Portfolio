@@ -347,6 +347,7 @@ text-align: center;
 
   .about-me{
     margin-bottom: 1.8rem;
+    padding: 2.4rem;
   }
 
   .heading-secondary{
@@ -375,6 +376,8 @@ text-align: center;
     grid-template-columns: 1fr;
     width: 38rem;
   }
+
+
 
 
   /* .footer--grid{
