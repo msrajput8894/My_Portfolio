@@ -175,6 +175,7 @@ text-align: center;
 
   .btn-mobile-nav{
     display: block;
+    z-index: 5999;
   }
 
 
