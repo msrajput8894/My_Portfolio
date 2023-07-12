@@ -13,7 +13,7 @@ yearEl.textContent = currentYear;
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 
-btnNavEl.addEventListener('click', function(){
+btnNavEl.addEventListener("click", function(){
 
 
   headerEl.classList.toggle("nav-open")
@@ -49,3 +49,33 @@ const obs = new IntersectionObserver(function(entries){
 
 });
 obs.observe(sectionHomeEl);
+
+
+///////////////////////////////////////////////////////// Smooth Scrolling Animation
+
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+
+    // Scroll Back to the top
+    if (href === "#")
+      window.scrollTo({
+        top: 0,
+        behaviour: "smooth",
+      });
+
+    //scroll to other links
+
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behaviour: "smooth" });
+    }
+
+    //close mobile navigation
+    if (link.classList.contains("main-nav-link"))
+      headerEl.classList.toggle("nav-open");
+  });
+});
