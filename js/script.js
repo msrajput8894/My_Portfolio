@@ -60,7 +60,7 @@ allLinks.forEach(function (link) {
     e.preventDefault();
     const href = link.getAttribute("href");
 
-    // Scroll Back to the top
+    //Scroll Back to the top
     if (href === "#")
       window.scrollTo({
         top: 0,
